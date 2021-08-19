@@ -9,7 +9,7 @@ const controller = require('../controllers/cartsController');
 Router.post('/', authToken, controller.store);
 
 // GET http://localhost:5000/carts/status
-// (http://localhost:5000/carts/status?state=___) <== hay que estar logueado
+// (http://localhost:5000/carts/status?state=___) <== hay que estar logueado SÍ i SÍ
 Router.get('/status', authToken, controller.status);
 
 // POST http://localhost:5000/carts/change-status/:cartId
